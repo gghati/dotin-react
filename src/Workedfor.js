@@ -16,7 +16,6 @@ export default function WorkedFor() {
         fetchtheAPI();
     }, []);
 
-
     if(!jobs.internships) return (<h> Loading.... </h>);
     if(!jobs.volunteer) return (<h> Loading.... </h>);
 

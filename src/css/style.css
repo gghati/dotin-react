@@ -179,6 +179,12 @@ td, th {
   color: green;
 }
 
+.buttonSubHead {
+    font-size: 20px;
+    color: white;
+    padding-bottom: 30px;
+}
+
 .divCerti {
   padding-top: 50px; padding-right: 15%; padding-left: 15%; padding-bottom: 50px;
 }

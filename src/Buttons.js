@@ -26,7 +26,8 @@ export default function Buttons() {
 
     return (
         <div class="buttonMain">
-            <b class="buttonHeading">HI, I'M GAURAV</b><br/>
+            <b class="buttonHeading">Gaurav Ghati</b><br/>
+            {/* <b class="buttonSubHead">Software Developer</b><br/> */}
 
             { buttons.formal.map((btn) => {
                 return <button class="btn-certi" onClick={openTab.bind(this, btn)} name={btn.link}>{btn.name}</button>;

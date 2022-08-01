@@ -9,7 +9,7 @@ export default function Nav({ page, num }) {
     var activeexp = base.concat((num==='4')? " active":"");
     var activeopen = base.concat((num==='5')? " active":"");
 
-    var url = ""
+    var url = "";
 
     if(num==='1') url = "https://gauravghati.github.io/apis/buttons.json";
     else if (num==='2') url = "https://gauravghati.github.io/apis/certificates.json";
@@ -20,7 +20,7 @@ export default function Nav({ page, num }) {
     return (
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" style={{backgroundColor:'#1f1f1f'}}>
             <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="#top">
+            <a class="navbar-brand js-scroll-trigger" href="">
                 <p class="img-fluid"><b style={{fontSize: '35px'}}>{page}</b></p>
             </a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
