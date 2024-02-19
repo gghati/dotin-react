@@ -7,15 +7,15 @@ export default function Nav({ page, num }) {
     var activecerti = base.concat((num==='2')? " active":"");
     var activepro = base.concat((num==='3')? " active":"");
     var activeexp = base.concat((num==='4')? " active":"");
-    var activeopen = base.concat((num==='5')? " active":"");
+    var activeRec = base.concat((num==='5')? " active":"");
 
     var url = "";
 
     if(num==='1') url = "https://gauravghati.github.io/apis/buttons.json";
     else if (num==='2') url = "https://gauravghati.github.io/apis/certificates.json";
     else if (num==='3') url = "https://gauravghati.github.io/apis/projects.json";
-    else if (num==='4') url = "https://gauravghati.github.io/apis/workedfor.json";
-    else if (num==='5') url = "https://gauravghati.github.io/apis/opensource.json";
+    else if (num==='4') url = "https://gauravghati.github.io/apis/workexp.json";
+    else if (num==='5') url = "https://gauravghati.github.io/apis/recommend.json";
 
     return (
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" style={{backgroundColor:'#1f1f1f'}}>
@@ -40,16 +40,16 @@ export default function Nav({ page, num }) {
                     <a class={activehome} href={process.env.PUBLIC_URL + '/'}>Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class={activecerti} href={process.env.PUBLIC_URL + '/#/certifications'}>Certifications</a>
+                    <a class={activeexp} href={process.env.PUBLIC_URL + '/#/workexp'}>Work-Exp</a>
                 </li>
                 <li class="nav-item">
                     <a class={activepro} href={process.env.PUBLIC_URL + '/#/projects'} >Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class={activeexp} href={process.env.PUBLIC_URL + '/#/workedfor'}>WorkedFor</a>
+                    <a class={activeRec} href={process.env.PUBLIC_URL + '/#/recommend'}>Recommendations</a>
                 </li>
                 <li class="nav-item">
-                    <a class={activeopen} href={process.env.PUBLIC_URL + '/#/opensource'}>OpenSource</a>
+                    <a class={activecerti} href={process.env.PUBLIC_URL + '/#/certifications'}>Certifications</a>
                 </li>
                 </ul>
             </div>

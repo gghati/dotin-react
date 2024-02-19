@@ -4,41 +4,41 @@ function openTab(th) {
     window.open(th.link,'_blank');
 }
 
-export default function Certificates() {
+export default function Recommend() {
 
-    const [certificates, setCerti] = useState([]);
+    const [recommendations, setRecmd] = useState([]);
 
     async function fetchtheAPI() {
-        const url = "https://gauravghati.github.io/apis/certificates.json";
+        const url = "https://gauravghati.github.io/apis/recommend.json";
         const response = await fetch(url);
         const jsondata = await response.json();
-        setCerti(jsondata);
+        setRecmd(jsondata);
     }
 
     useEffect(() => {
         fetchtheAPI();
     }, []);
 
-    if(!certificates) return (<h> Loading </h>);
+    if(!recommendations) return (<h> Loading </h>);
 
     return (
         <div class="divCerti">
             <table>
                 {
-                    certificates.map((certi) => {
+                    recommendations.map((recmd) => {
                         return <tbody>
                             <tr>
-                                <td class="c-heading">{certi.date}</td>
+                                <td class="c-heading">{recmd.contact}</td>
                             </tr>
                             <tr>
-                                <td class="c-main">{certi.name}</td>
-                                <td class="tdr"><button class="btn-certi" onClick={openTab.bind(this, certi)} name={certi.link}>Certificate</button></td>
+                                <td class="c-main">{recmd.from}</td>
+                                <td class="tdr"><button class="btn-certi" onClick={openTab.bind(this, recmd)} name={recmd.link}>View</button></td>
                             </tr>
                             <tr>
-                                <td class="c-des certiTr">{certi.from}, Grade: {certi.grade}</td>
+                                <td class="c-des certiTr">{recmd.affilation}</td>
                             </tr>
                             <tr>
-                                <td class="c-des certiTrBtn" colSpan="2">{certi.description}</td>
+                                <td class="c-des certiTrBtn" colSpan="2">{recmd.know}</td>
                             </tr>
                         </tbody>    
                     })

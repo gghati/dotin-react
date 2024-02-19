@@ -22,23 +22,32 @@ export default function Buttons() {
         fetchtheAPI();
     }, []);
 
-    if(!buttons.formal) return (<h> Loading </h>);
+    if(!buttons.formal) return (<h> Loading... </h>);
 
     return (
         <div class="buttonMain">
-            <b class="buttonHeading">Gaurav Ghati</b><br/>
-            {/* <b class="buttonSubHead">Software Developer</b><br/> */}
+            <b class="buttonHeading">Gaurav Ghati</b>
+            <br/>
+            <b class="buttonSubHead">Actively seeking Summer'24 Internships</b><br/>
+            <b class="buttonSubHead">CS grad at University of California, Irvine</b>
+
+            <br/><br/>
 
             { buttons.formal.map((btn) => {
                 return <button class="btn-certi" onClick={openTab.bind(this, btn)} name={btn.link}>{btn.name}</button>;
             }) }
 
-            <br/><br/><br/><br/>
+            <br/><br/>
 
-            { buttons.informal.map((btn) => {
-                return <button class="btn-certi" onClick={openTab.bind(this, btn)} name={btn.link}>{btn.name}</button>;
-            }) }
+            <b class="buttonSubHead">{buttons.quote1}</b>
+            
+            <br/><br/>
 
+            <b class="buttonSubHead">{buttons.quote2}</b>
+
+            <br/><br/>
+            
+            <button class="btn-certi" onClick={openTab.bind(this)} name="https://github.com/gauravghati/dotin-react">Source Code of Website</button>
         </div>
     );
 }

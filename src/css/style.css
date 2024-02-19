@@ -172,6 +172,7 @@ td, th {
   padding-top:250px; 
   padding-left: 400px; 
   padding-right: 400px;
+  flex-direction: column;
 }
 
 .buttonHeading {
@@ -200,6 +201,7 @@ td, th {
 
 .certiTrBtn {
   border-bottom: 1px solid green;
+  padding-bottom: 10px;
 }
 
 .fontSizeWorkedFor {

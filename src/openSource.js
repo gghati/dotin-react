@@ -37,7 +37,7 @@ export default function OpenSource() {
                             </tr>
                             <tr>
                                 <td class="c-main">{pr.title}</td>
-                                <td class="tdr"><button class="btn-certi" onClick={openTab.bind(this, pr.link)} name={pr.link}>PRLink</button></td>
+                                <td class="tdr"><button class="btn-certi" onClick={openTab.bind(this, pr.link)} name={pr.link}>View</button></td>
                             </tr>
                             <tr>
                                 <td class="c-des certiTr">Repo of: {pr.repo}</td>
@@ -60,7 +60,7 @@ export default function OpenSource() {
                             </tr>
                             <tr>
                                 <td className="c-main">{iss.title}</td>
-                                <td className="tdr"><button class="btn-certi" onClick={openTab.bind(this, iss.link)} name={iss.link}>IssueLink</button></td>
+                                <td className="tdr"><button class="btn-certi" onClick={openTab.bind(this, iss.link)} name={iss.link}>View</button></td>
                             </tr>
                             <tr>
                                 <td className="c-des certiTr">Repo: {iss.repo}</td>
