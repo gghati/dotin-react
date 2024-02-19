@@ -24,6 +24,10 @@ export default function Buttons() {
 
     if(!buttons.formal) return (<h> Loading... </h>);
 
+    const openInNewTab = (url) => {
+        window.open(url, "_blank", "noreferrer");
+      };
+
     return (
         <div class="buttonMain">
             <b class="buttonHeading">Gaurav Ghati</b>
@@ -47,7 +51,7 @@ export default function Buttons() {
 
             <br/><br/>
             
-            <button class="btn-certi" onClick={openTab.bind(this)} name="https://github.com/gauravghati/dotin-react">Source Code of Website</button>
+            <button class="btn-certi" role="link" onClick={() => openInNewTab("https://github.com/gauravghati/dotin-react")}>Source Code of Website</button>
         </div>
     );
 }
