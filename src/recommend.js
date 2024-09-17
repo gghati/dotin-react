@@ -9,7 +9,7 @@ export default function Recommend() {
     const [recommendations, setRecmd] = useState([]);
 
     async function fetchtheAPI() {
-        const url = "https://gauravghati.github.io/apis/recommend.json";
+        const url = "https://gghati.github.io/apis/recommend.json";
         const response = await fetch(url);
         const jsondata = await response.json();
         setRecmd(jsondata);

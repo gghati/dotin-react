@@ -11,7 +11,7 @@ export default function Buttons() {
     const [buttons, setButtons] = useState([]);
 
     async function fetchtheAPI() {
-        const url = "https://gauravghati.github.io/apis/buttons.json";
+        const url = "https://gghati.github.io/apis/buttons.json";
         const response = await fetch(url);
         const jsondata = await response.json();
         console.log(jsondata);
@@ -32,8 +32,8 @@ export default function Buttons() {
         <div class="buttonMain">
             <b class="buttonHeading">Gaurav Ghati</b>
             <br/>
-            <b class="buttonSubHead">Actively seeking Summer'24 Internships</b><br/>
-            <b class="buttonSubHead">CS grad at University of California, Irvine</b>
+            <b class="buttonSubHead">Actively Seeking Full-Time SDE Roles</b><br/>
+            <b class="buttonSubHead">CS Grad at University Of California, Irvine</b>
 
             <br/><br/>
 
@@ -51,7 +51,7 @@ export default function Buttons() {
 
             <br/><br/>
             
-            <button class="btn-certi" role="link" onClick={() => openInNewTab("https://github.com/gauravghati/dotin-react")}>Source Code of Website</button>
+            <button class="btn-certi" role="link" onClick={() => openInNewTab("https://github.com/gghati/dotin-react")}>Source Code of Website</button>
         </div>
     );
 }

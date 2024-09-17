@@ -11,11 +11,11 @@ export default function Nav({ page, num }) {
 
     var url = "";
 
-    if(num==='1') url = "https://gauravghati.github.io/apis/buttons.json";
-    else if (num==='2') url = "https://gauravghati.github.io/apis/certificates.json";
-    else if (num==='3') url = "https://gauravghati.github.io/apis/projects.json";
-    else if (num==='4') url = "https://gauravghati.github.io/apis/workexp.json";
-    else if (num==='5') url = "https://gauravghati.github.io/apis/recommend.json";
+    if(num==='1') url = "https://gghati.github.io/apis/buttons.json";
+    else if (num==='2') url = "https://gghati.github.io/apis/certificates.json";
+    else if (num==='3') url = "https://gghati.github.io/apis/projects.json";
+    else if (num==='4') url = "https://gghati.github.io/apis/workexp.json";
+    else if (num==='5') url = "https://gghati.github.io/apis/recommend.json";
 
     return (
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" style={{backgroundColor:'#1f1f1f'}}>

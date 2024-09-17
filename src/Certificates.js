@@ -9,7 +9,7 @@ export default function Certificates() {
     const [certificates, setCerti] = useState([]);
 
     async function fetchtheAPI() {
-        const url = "https://gauravghati.github.io/apis/certificates.json";
+        const url = "https://gghati.github.io/apis/certificates.json";
         const response = await fetch(url);
         const jsondata = await response.json();
         setCerti(jsondata);
